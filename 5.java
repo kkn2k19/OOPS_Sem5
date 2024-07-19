@@ -5,7 +5,7 @@ package chaptera_101_5;
 public class ChapterA_101_5 {
     public static void main(String[] args) {
         Operation obj = new Operation();
-        obj.setValue(20, 3);
+        obj.setValue(20, 0);
         obj.addition();
         obj.subtraction();
         obj.multiplication();
@@ -32,6 +32,10 @@ class Operation {
         System.out.println(a + " * " + b + " = " + (a*b));
     }
     void divison() {
+        if (b == 0){
+            System.out.println("UNDEFINED");
+            return;
+        }
         System.out.println(a + " / " + b + " = " + (a/b));
     }
 }
