@@ -4,6 +4,10 @@
 //  void set(float, float) to set the specified value in the object
 //  void disp() to display complex number object
 //  complex sum(complex) to sum two complex numbers & return complex number
+//  a. Write the definitions for each of the above member functions.
+//  b. Write the main function to create three complex number objects. Set the value
+// in two objects and call sum() to calculate the sum and assign it to the third object.
+// Display all complex numbers.
 
 // package CODES.OOPS.Chapter C;
 
