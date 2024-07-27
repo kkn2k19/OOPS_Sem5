@@ -14,14 +14,21 @@ public class ChapterC_101_1 {
 class Difference {
     int roll = 100;
     String name = "Rahul";
-    
-    void set(int roll, String name){
-        this.roll=roll;
+
+    void set(int roll, String name) {
+        this.roll = roll;
         this.name = name;
     }
-    
-    void display(){
+
+    void display() {
         System.out.println("Name : " + name);
         System.out.println("Roll No. : " + roll);
     }
 }
+
+/*
+ * OUTPUT--
+ * 
+ * Name : Karan
+ * Roll No. : 101
+ */
