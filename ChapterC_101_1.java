@@ -1,6 +1,7 @@
-// 1.
+// 1. Write a program to show how ‘this’ keyword is used to differentiate between an
+// instance variable and a local variable with the same name. 
 
-package chapterc_101_1;
+// package chapterc_101_1;
 
 public class ChapterC_101_1 {
     public static void main(String[] args) {
