@@ -4,7 +4,7 @@
 // Search, to search an element se using Binary Search, to perform the Bubble Sort
 // on the array, to display the elements in the array, Arr, respectively. 
 
-package chapterb_101_1;
+// package chapterb_101_1;
 
 import java.util.Arrays;
 
@@ -14,13 +14,13 @@ public class ChapterB_101_1 {
         VOperations obj = new VOperations();
         obj.initializer(arr);
         System.out.println("The array you entered : " + Arrays.toString(obj.show()));
-        
+
         int se = 8;
         System.out.println("Element " + obj.linearSearch(se) + " by linear search");
-        
+
         se = 9;
         System.out.println("Element " + obj.binSearch(se) + " by binary search");
-        
+
         obj.bubbleSort();
         System.out.println("Array sorted by Bubble Sort : " + Arrays.toString(obj.show()));
     }
@@ -56,3 +56,13 @@ class VOperations {
         return arr;
     }
 }
+
+/*
+ * OUTPUT --
+ * 
+ * The array you entered : [11, 6, 77, 8, 5, 44, 6, 9, 442, 86, 73, 49, 68, 82]
+ * Element 8 found at index 3 by linear search
+ * Element 9 found at index 4 by binary search
+ * Array sorted by Bubble Sort : [5, 6, 6, 8, 9, 11, 44, 49, 68, 73, 77, 82, 86,
+ * 442]
+ */
