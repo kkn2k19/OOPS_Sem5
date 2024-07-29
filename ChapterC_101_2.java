@@ -7,7 +7,7 @@ public class ChapterC_101_2 {
     public static void main(String[] args) {
         System.out.println("Main method starts");
         ExecutionOrder obj = new ExecutionOrder();
-        obj.demonstrateLocalBlock();
+        obj.localBlock();
         System.out.println("Main method ends");
     }
 }
@@ -25,7 +25,7 @@ class ExecutionOrder {
         System.out.println("3. Constructor");
     }
 
-    void demonstrateLocalBlock() {
+    void localBlock() {
         {
             System.out.println("4. Local block inside method");
         }
