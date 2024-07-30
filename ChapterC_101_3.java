@@ -9,7 +9,7 @@
 // in two objects and call sum() to calculate the sum and assign it to the third object.
 // Display all complex numbers.
 
-// package CODES.OOPS.Chapter C;
+package chapterc_101_3;
 
 public class ChapterC_101_3 {
     public static void main(String[] args) {
@@ -21,14 +21,14 @@ public class ChapterC_101_3 {
         c2.set(5.6f, 7.8f);
 
         System.out.println("Complex number 1: ");
-        c1.display();
+        c1.disp();
 
         System.out.println("Complex number 2: ");
-        c2.display();
+        c2.disp();
 
         c3 = c1.sum(c2);
         System.out.println("Sum of complex numbers: ");
-        c3.display();
+        c3.disp();
     }
 }
 
@@ -40,8 +40,16 @@ class Complex {
         this.imaginary = imaginary;
     }
 
-    void display() {
+    void disp() {
+        if (real < 0 && imaginary < 0) {
+            System.out.println(" - " + real + " - " + imaginary + "i");
+        } else if (real < 0){
+            System.out.println(" - " + real + " + " + imaginary + "i");
+        } else if (imaginary < 0){
+            System.out.println(real + " - " + imaginary + "i");
+        } else {
         System.out.println(real + " + " + imaginary + "i");
+        }
     }
 
     Complex sum(Complex c) {
