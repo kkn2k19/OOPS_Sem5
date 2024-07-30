@@ -5,7 +5,7 @@
 // DOB findAge(DOB) has one parameter of type DOB. This method will find the age
 // difference and will return DOB object. Print all DOB objects’ data. 
 
-// package chapterc_101_6;
+package chapterc_101_6;
 
 public class ChapterC_101_6 {
     public static void main(String[] args) {
@@ -16,17 +16,17 @@ public class ChapterC_101_6 {
 
         System.out.print("DOB1 : ");
         dob1.show();
-        System.out.print("\nDOB2 : ");
+        System.out.print("DOB2 : ");
         dob2.show();
 
         DOB ageDifference = dob1.findAge(dob2);
-        System.out.print("\nAge Difference : ");
+        System.out.print("Age Difference : ");
         ageDifference.show();
     }
 }
 
 class DOB {
-    private int date, month, year;
+    int date, month, year;
 
     void setDOB(int d, int m, int y) {
         this.date = d;
@@ -65,8 +65,6 @@ class DOB {
  * OUTPUT --
  * 
  * DOB1 : 6/9/2004
- * 
  * DOB2 : 5/9/2002
- * 
  * Age Difference : 1/0/2
  */
