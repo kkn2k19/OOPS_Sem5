@@ -17,8 +17,8 @@ public class ChapterC_101_3 {
         Complex c2 = new Complex();
         Complex c3;
 
-        c1.set(1.2f, 3.4f);
-        c2.set(5.6f, 7.8f);
+        c1.set(1.2f, -3.4f);
+        c2.set(-5.6f, 7.8f);
 
         System.out.println("Complex number 1: ");
         c1.disp();
@@ -42,11 +42,11 @@ class Complex {
 
     void disp() {
         if (real < 0 && imaginary < 0) {
-            System.out.println(" - " + real + " - " + imaginary + "i");
+            System.out.println(real + " " + imaginary + "i");
         } else if (real < 0){
-            System.out.println(" - " + real + " + " + imaginary + "i");
+            System.out.println(real + " + " + imaginary + "i");
         } else if (imaginary < 0){
-            System.out.println(real + " - " + imaginary + "i");
+            System.out.println(real + " " + imaginary + "i");
         } else {
         System.out.println(real + " + " + imaginary + "i");
         }
