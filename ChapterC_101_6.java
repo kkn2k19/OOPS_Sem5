@@ -10,9 +10,9 @@ package chapterc_101_6;
 public class ChapterC_101_6 {
     public static void main(String[] args) {
         DOB dob1 = new DOB();
-        dob1.setDOB(6, 9, 2004);
+        dob1.setDOB(06, 9,2004);
         DOB dob2 = new DOB();
-        dob2.setDOB(5, 9, 2002);
+        dob2.setDOB(30,07,2024);
 
         System.out.print("DOB1 : ");
         dob1.show();
@@ -28,43 +28,41 @@ public class ChapterC_101_6 {
 class DOB {
     int date, month, year;
 
-    void setDOB(int d, int m, int y) {
-        this.date = d;
-        this.month = m;
-        this.year = y;
+    void setDOB(int date, int month, int year) {
+        this.date = date;
+        this.month = month;
+        this.year = year;
     }
 
     void show() {
         System.out.println(date + "/" + month + "/" + year);
     }
 
-    DOB findAge(DOB other) {
-        int ageDate, ageMonth, ageYear;
+    DOB findAge(DOB obj) {
+        DOB difference = new DOB();
 
-        if (this.date < other.date) {
+        if (this.date < obj.date) {
             this.date += 30;
             this.month -= 1;
         }
-        ageDate = this.date - other.date;
+        difference.date = this.date - obj.date;
 
-        if (this.month < other.month) {
+        if (this.month < obj.month) {
             this.month += 12;
             this.year -= 1;
         }
-        ageMonth = this.month - other.month;
+        difference.month = this.month - obj.month;
 
-        ageYear = this.year - other.year;
-
-        DOB ageDifference = new DOB();
-        ageDifference.setDOB(ageDate, ageMonth, ageYear);
-        return ageDifference;
+        difference.year = this.year - obj.year;
+        
+        return difference;
     }
 }
 
 /*
- * OUTPUT --
- * 
- * DOB1 : 6/9/2004
- * DOB2 : 5/9/2002
- * Age Difference : 1/0/2
- */
+OUTPUT --
+
+DOB1 : 6/9/2004
+DOB2 : 30/7/2024
+Age Difference : 6/1/-20
+*/
