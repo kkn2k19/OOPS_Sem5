@@ -18,7 +18,7 @@ class Child extends Parent {
     }
 }
 
-public class Main {
+public class ChapterF_101_2 {
     public static void main(String[] args) {
         Parent parentObject = new Parent();
         parentObject.callParentMethod();
