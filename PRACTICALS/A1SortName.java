@@ -20,7 +20,8 @@ public class A1SortName {
 }
 
 // Enter 10 student names:
-// John Alice
+// John 
+// Alice
 // Bob
 // Zara
 // Mike
@@ -28,14 +29,17 @@ public class A1SortName {
 // David Eve
 // Nancy
 // Oscar
+// Zara
 
 // Sorted student names:
-// Alice Bob
+// Sorted student names:
+// Alice
+// Bob
 // Charlie
-// David
-// Eve
+// David Eve
 // John
 // Mike
 // Nancy
 // Oscar
+// Zara
 // Zara
