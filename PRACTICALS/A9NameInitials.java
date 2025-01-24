@@ -7,13 +7,16 @@ public class A9NameInitials {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter full name: ");
         String[] parts = sc.nextLine().split(" ");
-        for (String part : parts) {
-            System.out.print(part.charAt(0) + ".");
+        
+        for (int i = 0; i < parts.length - 1; i++) {
+            System.out.print(parts[i].charAt(0) + ".");
         }
-        sc.close();
+        
+        // Print the last part (full last name without an extra dot)
+        System.out.print(parts[parts.length - 1]);
     }
 }
 
 // OUTPUT ---
 // Enter full name: Karan Kumar Nonia
-// K.K.N.
+// K.K.Nonia
