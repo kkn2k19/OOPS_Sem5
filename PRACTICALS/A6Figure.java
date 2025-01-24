@@ -5,12 +5,8 @@ class Figure {
         return side * side;
     }
 
-    double area(double length, double breadth) {
-        return length * breadth;
-    }
-
-    double area(double radius, boolean isSphere) {
-        return isSphere ? 4 * Math.PI * radius * radius : Math.PI * radius * radius;
+    double area(double radius, float pi) {
+        return (4 * pi * radius * radius);
     }
 }
 
@@ -19,12 +15,12 @@ public class A6Figure {
         Figure f = new Figure();
         System.out.println("Cube Area : " + 6 * f.area(2.2));
         System.out.println("Square Area: " + f.area(5));
-        // System.out.println("Rectangle Area: " + f.area(4, 6));
-        System.out.println("Sphere Surface Area: " + f.area(3, true));
+        float pi = 3.14f;
+        System.out.println("Sphere Area: " + f.area(3, pi));
     }
 }
 
 // OUTPUT ---
 // Cube Area : 29.040000000000006
 // Square Area: 25.0
-// Sphere Surface Area: 113.09733552923255
+// Sphere Area: 113.0400037765503
